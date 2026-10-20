@@ -17,4 +17,17 @@ class MedianTest : FreeSpec({
     }
 
     // Write four more tests here
+
+    "median of a single element list" {
+        median(listOf(5.0)) shouldBe 5.0
+    }
+    "median of a double element list" {
+        median(listOf(5.0, 12.0)) shouldBe 8.5
+    }
+    "median of a triple element list" {
+        median(listOf(7.0, 15.0, 11.0)) shouldBe 11.0
+    }
+    "median of a quadruple element list" {
+        median(listOf(12.0, 2.0, 7.0, 20.0)) shouldBe 9.5
+    }
 })
